@@ -1,0 +1,33 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../237D-1AF7/下载文件源码/stone-lang/src/stone/Parser.java">
+    <Files>
+      <File FileName="Form1.cs" Line="35" Column="32" />
+      <File FileName="src/Lexer.cs" Line="110" Column="29" />
+      <File FileName="ASTree/ASTree.cs" Line="32" Column="10" />
+      <File FileName="ASTree/ASTLeaf.cs" Line="11" Column="19" />
+      <File FileName="ASTree/Literals.cs" Line="9" Column="38" />
+      <File FileName="ASTree/BinaryExpression.cs" Line="8" Column="30" />
+      <File FileName="ASTree/ASTList.cs" Line="8" Column="13" />
+      <File FileName="../../../../../../../237D-1AF7/下载文件源码/stone-lang/src/stone/Parser.java" Line="303" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ScriptIn14Days" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+            <Node name="ASTree" expanded="True" />
+            <Node name="src" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
