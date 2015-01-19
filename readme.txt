@@ -31,5 +31,13 @@ kk = fun name(i,j,k){i+j+k;}
 kk(1,2,3);
 kk(1,2,6);
 
-6:
+6:[call c# static function]
+invoke("System.Console","WriteLine","helloworld");
+
+or[some shortcuts in this parser]
+invoke("print","helloworld");
+
+invoke("time");
+
+7:
 ToBeContinue
