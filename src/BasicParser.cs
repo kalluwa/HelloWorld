@@ -17,6 +17,7 @@ namespace ScriptIn14Days.src
         Parser.Operators Ops;
 
         Parser expr0;
+        Parser PrimaryBasic;
         Parser Primary;
         Parser Factor;
         Parser Expr;
@@ -28,7 +29,11 @@ namespace ScriptIn14Days.src
 
         //function 
         Parser Args;
+        Parser Postfix;
         Parser Func;
+
+        Parser Invoke;
+
         #endregion
         public BasicParser()
         {
@@ -60,16 +65,19 @@ namespace ScriptIn14Days.src
             //null tree
             Expr = Parser.rule();
             Args = Parser.rule(typeof(ArgsStmnt));
+            Postfix = Parser.rule().addSkip(new string[] { "(" })
+                .option(Parser.rule().addAst(Args))
+                .addSkip(new string[] { ")" });
             Func = Parser.rule(typeof(FunStmnt));
-            
+
             Primary = Parser.rule(typeof(PrimaryStmnt)).or(new Parser[]{
                 Parser.rule().addSkip(new string[]{"("}).addAst(Expr).addSkip(new string[]{")"}),
                 Parser.rule().addNumber(),
                 Parser.rule().addString(),
                 Parser.rule().addId(reserved)
-            })
-            .option(Parser.rule().addSkip(new string[]{"("}).option(Parser.rule().addAst(Args))
-            .addSkip(new string[] { ")" }));
+            }).option(Postfix);
+
+            //Primary = Parser.rule().addAst(PrimaryBasic).option(Postfix);
 
             Factor = Parser.rule().or(
                 new Parser[]{
@@ -96,9 +104,16 @@ namespace ScriptIn14Days.src
             Func.addSkip(new string[] { "fun" })
                 .addAst(Primary).addAst(Block);
 
+            Invoke = Parser.rule(typeof(InvokeStmnt));
+            Invoke.addSkip(new string[] { "invoke" })
+                .addSkip(new string[] { "(" })
+                .addAst(Args)
+                .addSkip(new string[] { ")" });
+
             Statement.or(new Parser[]{
                 //function 
                 Func,
+                Invoke,
                 //if else statement
                 Parser.rule(typeof(IfStmnt)).addSkip(new string[] { "if" })
                 .addAst(Expr)

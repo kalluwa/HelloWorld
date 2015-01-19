@@ -75,6 +75,7 @@
     <Compile Include="ASTrees\BlockStmnt.cs" />
     <Compile Include="ASTrees\FunStmnt.cs" />
     <Compile Include="ASTrees\IfStmnt.cs" />
+    <Compile Include="ASTrees\InvokeStmnt.cs" />
     <Compile Include="ASTrees\Parser.cs" />
     <Compile Include="ASTrees\BinaryExpression.cs" />
     <Compile Include="ASTrees\Literals.cs" />
@@ -91,6 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\BasicInvoker.cs" />
     <Compile Include="src\BasicParser.cs" />
     <Compile Include="src\Lexer.cs" />
     <Compile Include="src\LineNumberReader.cs" />

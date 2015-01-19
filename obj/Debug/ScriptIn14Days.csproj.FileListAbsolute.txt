@@ -1,12 +1,9 @@
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\bin\Debug\ScriptIn14Days.exe
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\bin\Debug\ScriptIn14Days.pdb
-C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ScriptIn14Days.Properties.Resources.resources
-C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ScriptIn14Days.exe
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ScriptIn14Days.pdb
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ScriptIn14Days.Form1.resources
 C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\bin\Debug\ScriptIn14Days.exe.config
-C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\GenerateResource-ResGen.read.1.tlog
-C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ScriptIn14Days.csprojResolveAssemblyReference.cache
+C:\Users\kalluwa\Documents\Visual Studio 2008\Projects\ScriptIn14Days\obj\Debug\ScriptIn14Days.csproj.GenerateResource.Cache

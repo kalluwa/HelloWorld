@@ -17,6 +17,8 @@ namespace ScriptIn14Days
         public Form1()
         {
             InitializeComponent();
+            //for invoke output
+            staticForm = this;
 
             OriginalSize=LastSize = Size;
             controlRatio = new List<RectangleF>();
@@ -33,6 +35,7 @@ namespace ScriptIn14Days
 
                 controlRatio.Add(new RectangleF(startX, startY, moveX, moveY));   
             }
+
         }
 
         class RectangleF
@@ -119,9 +122,18 @@ namespace ScriptIn14Days
 
         public void Output(string msg)
         {
-            richTextBox2.AppendText("\n"+msg);
+            richTextBox2.AppendText(msg + "\n");
             
             Console.WriteLine(msg);
+        }
+
+        static Form1 staticForm;
+        public static void OutputStatic(string msg)
+        {
+            if (staticForm == null)
+                return;
+
+            staticForm.Output(msg);
         }
 
         Size LastSize,OriginalSize;
